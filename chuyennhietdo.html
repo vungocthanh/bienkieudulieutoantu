@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chuyen nhiet do</title>
+</head>
+<body>
+<h3>Tool Chuyển Nhiệt Độ</h3>
+<form action="#">
+    <label >Nhập Độ C</label>
+    <input type="number" id="doC" placeholder="nhập độ C">
+    <button type="button" onclick="changeTemperature()"> Chuyển nhiệt độ </button>
+    <p><b>Độ F là : </b></p> <p id="xuat"></p>
+</form>
+<form>
+    <h3> Tool Nhập Điểm Học Sinh </h3>
+    <label> Nhập điểm Lý </label>
+    <input type="number" id="scoreL" placeholder="Nhập điểm Lý" >
+    <labe> Nhập điểm Hoá </labe>
+    <input type="number" id="scoreH" placeholder="Nhập điểm Hoá">
+    <labe> Nhập điểm Sinh</labe>
+    <input type="number" id="scoreS" placeholder="Nhập điểm Sinh">
+    <button type="button" onclick="mediscore()" > MediumScore </button>
+    <button type="button" onclick="totalScore()" > TotalScore </button>
+    <p><b>Điểm Trung Bình là :</b></p>
+    <p id="outputMedium"></p>
+    <p><b>Điểm Tổng là :</b></p>
+    <p id="outputTotal"></p>
+</form>
+<form>
+    <h3>Tool Tính Diện Tích & Chu vi</h3>
+    <labe> Nhập bán kính: </labe>
+    <input type="number" id="perimeter">
+    <button type="button" onclick="calcCirclePeriArea()">Chu vi và Diện Tích</button>
+    <p><b>Chu vi hình tròn là: </b></p>
+    <p id="peri" ></p>
+    <p><b>Diện tích hình tròn là: </b></p>
+    <p id="erea" ></p>
+</form>
+<script src="chuyennhiet.js"></script>
+<script src="chuvidientich.js"></script>
+<script src="diemtrungbinh.js"></script>
+<script src="chuvidientich.js"></script>
+</body>
+</html>
